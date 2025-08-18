@@ -12,12 +12,24 @@ const articles = defineCollection({
         category: z.string(),
         pubDate: z.coerce.date(),
         readingDuration: z.number(),
-        originalLink: z.string().url(),
+        //originalLink: z.string().url(),
         isDraft: z.boolean().default(false),
         updatedDate: z.coerce.date().optional(),
         author: z.string().default('Retro Rocket Team'),
-        relatedArticles: z.array(reference('articles')).optional(),
+        //relatedArticles: z.array(reference('articles')).optional(),
     }),
 });
 
-export const collections = { articles };
+const projectsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    category: z.string(),
+    description: z.string(),
+    skills: z.array(z.string()),
+    link: z.string().url(),
+    image: z.string(),
+  }),
+});
+
+export const collections = { articles, projects: projectsCollection };

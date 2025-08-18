@@ -12,6 +12,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
+  site: 'https://rrkcoder.com',
 
   integrations: [react()],
 
