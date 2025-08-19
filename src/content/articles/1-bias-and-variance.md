@@ -4,9 +4,8 @@ title: Evaluating an Estimator
 snippet: Understanding the Bias-Variance trade-off in machine learning models.
 slug: evaluating-an-estimator-bias-and-variance
 author: signull
-category: Machine Learning
 readingDuration: 7
-pubDate: 2025 8 12
+date: 2025-08-18
 coverAlt: Evaluating an Estimator - Bias and Variance
 # originalLink: https://signull.substack.com/p/evaluating-an-estimator-bias-and-variance
 cover: ../../assets/bias-and-variance.jpg
