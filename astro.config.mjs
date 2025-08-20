@@ -11,8 +11,7 @@ export default defineConfig({
   site: 'https://rrkcoder.com',
    output: 'static',
   vite: {
-    plugins: [tailwindcss()],
-    base: '/rrkcoder/',
+    plugins: [tailwindcss()]
   },
   
 
